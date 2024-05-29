@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            AI
+        </title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/file.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div>
+                <div class="chapsters">
+                    <img class="about" src="img/about.svg" onclick="openmenu()"> 
+                </div>
+            <div class="close_menu_block" id="menu" onclick="closemenu()">
+                <div class="close_menu">
+                    <img class="cross" src="img/cross.svg">
+                </div>
+                <div class="link_chapsters">
+                    <ul class="link_tab">
+                    <li class="dot"><a class="dicor" href="#">
+                        About me
+                    </a></li>
+                    <li class="dot"><a class="dicor" href="#">
+                        Video
+                    </a></li>
+                    <li class="dot"><a class="dicor" href="#">
+                         Application
+                    </a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </header>
+        <main>
+            <section class="content">
+                <div class="centerblock">
+                    
+                    <div class="ai">
+                        <img class="ai_img" src="img/aiimg.png">
+                    </div>
+                    <div class="subject">
+                        <p>Штучний Інтелект</p>
+                    </div>
+                    <div class="line">
+                        <img class="line" src="img/line.svg">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="link_to_me">
+                <div>Founder:</div>
+                <div>@Mr.Falcon</div>
+            </div>
+        </footer>
+        <script>
+            let menu = document.getElementById("menu")
+            let body = document.getElementsByName("body")
+            function closemenu(){
+                menu.style.top = "-100vh";
+                document.body.style.overflow = "auto";
+            }
+            function openmenu(){
+                menu.style.top = 0;
+                document.body.style.overflow = "hidden";
+            }
+        </script>
+    </body>
+</html>
