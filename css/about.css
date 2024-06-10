@@ -1,0 +1,127 @@
+
+*{
+    overflow-x: hidden;
+}
+body{
+    background-color: #008987;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.chapsters{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    padding: 30px;
+}
+.about{
+    max-width: calc(100vw / 1920 * 150);
+}
+.about:hover{
+    filter: drop-shadow(0 0 5px black);
+    transition: 0.5s;
+}
+.close_menu_block{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgb(63, 63, 63);
+    top: -100vh;
+}
+.close_menu{
+    line-height: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.cross{
+    max-width: calc(100vw / 1920 * 150);
+}
+.cross:hover{
+    filter: drop-shadow(0 0 5px black);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.link_chapsters{
+    height: 100vh;
+    width: 100%;
+}
+
+.link_tab{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.dicor{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+.dicor:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 70px 150px;
+}
+.information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 50px;
+    border: solid 3px white;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+.me{
+    width: 30em;
+    border: 3px solid white;
+    border-radius: 25%;
+    display: block;
+}
+
+.resume{
+    color: white;
+    font-size: 3rem;
+}
+@media screen and (max-width: 1310px) {
+    .information{
+        justify-content: center;
+        gap: 30px;
+    }
+    main{
+        padding: 50px 10px;
+    }
+}
+@media screen and (max-width: 625px){
+    .me{
+        width: 15em;
+    }
+    .resume{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 410px){
+    .me{
+        width: 15em;
+    }
+    .resume{
+        font-size: 2rem;
+    }
+    .information{
+        padding: 10px;
+    }
+}

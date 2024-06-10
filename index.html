@@ -8,8 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./css/file.css">
+        <link rel="stylesheet" type="text/css" href="css/file.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/linux-512.webp" type="image/x-icon">
     </head>
     <body>
         <header>
@@ -23,13 +24,13 @@
                 </div>
                 <div class="link_chapsters">
                     <ul class="link_tab">
-                    <li class="dot"><a class="dicor" href="#">
+                    <li class="dot"><a class="dicor" href="aboutme.html">
                         About me
                     </a></li>
-                    <li class="dot"><a class="dicor" href="#">
+                    <li class="dot"><a class="dicor" href="video.html">
                         Video
                     </a></li>
-                    <li class="dot"><a class="dicor" href="#">
+                    <li class="dot"><a class="dicor" href="app.html">
                          Application
                     </a></li>
                     </ul>
@@ -59,17 +60,6 @@
                 <div>@Mr.Falcon</div>
             </div>
         </footer>
-        <script>
-            let menu = document.getElementById("menu")
-            let body = document.getElementsByName("body")
-            function closemenu(){
-                menu.style.top = "-100vh";
-                document.body.style.overflow = "auto";
-            }
-            function openmenu(){
-                menu.style.top = 0;
-                document.body.style.overflow = "hidden";
-            }
-        </script>
+        <script src="js/subjects.js"></script>
     </body>
 </html>
