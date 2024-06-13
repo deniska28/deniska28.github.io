@@ -103,9 +103,3 @@ a{
 .transit:hover{
     font-size: 35px;
 }
-.descrip{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-}
