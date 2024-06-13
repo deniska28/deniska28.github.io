@@ -6,6 +6,7 @@
 }
 body{
     background: rgb(16, 39, 99);
+    height: 100vh;
 }
 .chapsters{
     display: flex;
@@ -68,20 +69,25 @@ ul{
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
+main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
 section{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 a{
     display: flex;
     align-items: center;
     flex-direction: column;
     color: white;
+
 }
 .logo{
-    width: 440px;
+    width: 640px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -89,12 +95,17 @@ a{
     flex-shrink: 1;
     margin: 30px;
 }
-span{
+.transit{
     font-size: 30px;
     font-weight: 900;
-    transition: 1s;
+    color: white;
 }
-span:hover{
+.transit:hover{
     font-size: 35px;
-    transition: 1s;
+}
+.descrip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
